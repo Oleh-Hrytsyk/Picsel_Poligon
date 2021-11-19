@@ -1,0 +1,100 @@
+.avtorisation_form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 85vh;
+    padding: 3% 30%;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 30px;
+}
+.avtorisation_input{
+    display: grid;
+    width: 100%;
+    height: 30pc;
+    grid-template-rows: 0.4fr 0.3fr 0.2fr 0.3fr 0.2fr .5fr .7fr;
+    text-align: center;
+    padding: 2% 10% 4.5% 10%;
+    background-color: rgb(235, 235, 235);
+    border-radius: 30px;
+}
+.avtorisation_input input[type="email"]{
+    grid-row: 2/3;
+}
+.avtorisation_input span[id="span_email"]{
+    grid-row: 3/4;
+}
+.avtorisation_input input[type="password"]{
+    grid-row: 4/5;
+}
+.avtorisation_input span[id="span_password"]{
+    grid-row: 5/6;
+}
+.avtorisation_input span[id="forgot"]{
+    grid-row: 6/7;
+    font-size: 22px;
+    color: rgb(0, 0, 180);
+}
+.avtorisation_input a{
+    height: auto;
+}
+
+.avtorisation_input input[type="button"]{
+    grid-row: 7/8;
+    margin: 2% 15%;
+    border: none;
+    border-radius: 20px;
+    background-color: #f26c4f;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 30px;
+}
+.avtorisation_input input[type="button"]:hover{
+    background-color: #fc461d;
+}
+.avtorisation_input input[type="password"],.avtorisation_input input[type="email"]{
+    width: 100%-30px;
+    height: 2pc-4px;
+    border: 2px solid rgb(220, 220, 220);
+    border-radius: 10px;
+    padding: 2px 15px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+}
+.avtorisation_input input:hover{
+    border-color: #f26c4f;
+}
+.avtorisation_input input[type="password"]:focus, .avtorisation_input input[type="email"]:focus{
+    outline: none !important;
+    border: 2px solid blue;
+}
+.avtorisation_input input[type="password"]:not(:placeholder-shown):invalid,.avtorisation_input input[type="email"]:not(:placeholder-shown):invalid{
+    border-color: red;
+}
+.avtorisation_input input:not(:placeholder-shown):invalid + span::before{
+  content: "Please enter correct data";
+  font-size: 10px;
+  color: red;
+}
+
+@media(max-width:960px){
+    .avtorisation_form{
+         padding: 3% 25%;
+         height: 90vh;
+     }
+     .avtorisation_input{
+         padding: 2% 10% 4.5% 10%;
+     }
+     .avtorisation_input input[type="button"]{
+         margin:  15%;
+         height: 5pc;
+         font-size: 20px;
+     }
+     .avtorisation_input span[id="forgot"]{
+         font-size: 16px;
+     }
+ }
+ @media(max-width:700px){
+     .avtorisation_form{
+         padding: 3% 15%;
+         height: 89vh;
+     }
+ }

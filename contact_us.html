@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+    <meta charset="UTF-8">
+	<meta name="vieport" content="inital-scale=1.0, width=device-width">
+    <title>Contact us</title>
+    <link id="css_style" rel="stylesheet" href="css/style.css">
+    <script src="js/chenge_style.js"></script>
+        <link rel="shortcut icon" href="icons/logo.ico" type="x-icon">
+    </head>
+<body>
+<div class="conteiner" id="conteiner">
+    <div class="header" id="header">
+        <div class="logo" id="logo">
+            <div class="logo_button" id="logo_button">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+        </div>
+        <div class="header_buttons">
+            <div class="home" id="home">
+                <p><a href="index.html"><b>Головна</b></a></p>
+            </div>
+            <div class="search_line" id="search_line">
+                <input type="search" name="search" id="search" placeholder="Пошук"  maxlength="20">
+                <input type="image" name="loupe" id="light_loupe" src="images/loupe.png">
+                <input type="image" name="loupe" id="dark_loupe" src="images/loupe_light.png">
+            </div>
+            <div class="sign_in" id="sign_in">
+                <p><a href="avtorisation.html"><b>Увійти</b></a></p>
+            </div>
+            <div class="sign_up" id="sign_up">
+                <p><a href="registration.html"><b>Реєстрація</b></a></p>
+            </div>
+            <div class="username" id="username">
+                <p><a href="user_page.html"><b>Username</b></a></p>
+            </div>
+            <div class="log_out" id="log_out">
+                <p><a href=""><b>Вихід</b></a></p>
+            </div>
+        </div>
+    </div>
+    <div class="main" id="main">
+        <div class="contact_us_form">
+            <div class="contact_input" id="contact_input">
+                <p><b>Contact Us</b></p>
+                <span id="text"><p>Якщо у Вас є питання, або пропозиції, будь ласка напишіть нам їх, викоравши дану форму.</p></span>
+                <input type="text" name="username" id="username" placeholder="Введіть ім'я" maxlength="32" minlength="5" required="" value="" /><span id="span_name"> </span>
+                <input type="email" name="email" id="email" placeholder="Введіть e-mail" maxlength="32" required=""value=""/><span  id="span_email"> </span>
+                <input type="button" value="Готово" name="submit_contact_us" id="submit_contact_us">
+                <textarea name="message" id="message" maxlength="250" minlenght="5" rows="7" placeholder="Ваше повідомлення"></textarea><span id="span_area"> </span>
+            </div>
+        </div>
+        <div class="change_style" id="change_style">
+                <input type="image" name="light_style"  id="chande_light_style" onclick="all_style()" src="images/moon.png">
+                <input type="image" name="dark_style"  id="chande_dark_style" onclick="all_style()" src="images/sun.png">
+        </div>
+        <div class="contact_us" id="contact_us">
+            <a href="contact_us.html"><input type="image" name="light_style"  id="contact_light_style" src="images/communicate.png"></a>
+            <a href="contact_us.html"><input type="image" name="dark_style"  id="contact_dark_style" src="images/communicate_light.png"></a>
+        </div>
+     </div>
+</div>
+</body>
+</html>

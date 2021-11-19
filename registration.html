@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+    <meta charset="UTF-8">
+	<meta name="vieport" content="inital-scale=1.0, width=device-width">
+    <title>Sign up</title>
+    <link id="css_style" rel="stylesheet" href="css/style.css">
+    <script src="js/chenge_style.js"></script>
+        <link rel="shortcut icon" href="icons/logo.ico" type="x-icon">
+    </head>
+<body>
+<div class="conteiner" id="conteiner">
+    <div class="header" id="header">
+        <div class="logo" id="logo">
+            <div class="logo_button" id="logo_button">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+        </div>
+        <div class="header_buttons">
+            <div class="home" id="home">
+                <p><a href="index.html"><b>Головна</b></a></p>
+            </div>
+            <div class="search_line" id="search_line">
+                <input type="search" name="search" id="search" placeholder="Пошук"  maxlength="20">
+                <input type="image" name="loupe" id="light_loupe" src="images/loupe.png">
+                <input type="image" name="loupe" id="dark_loupe" src="images/loupe_light.png">
+            </div>
+            <div class="sign_in" id="sign_in">
+                <p><a href="avtorisation.html"><b>Увійти</b></a></p>
+            </div>
+            <div class="sign_up" id="sign_up">
+                <p><a href="registration.html"><b>Реєстрація</b></a></p>
+            </div>
+            <div class="username" id="username">
+                <p><a href="user_page.html"><b>Username</b></a></p>
+            </div>
+            <div class="log_out" id="log_out">
+                <p><a href=""><b>Вихід</b></a></p>
+            </div>
+        </div>
+    </div>
+    <div class="main" id="main">
+        <div class="registration" id="registration">
+        <div class="registration_form" id="registration_form">
+            <p><b>Sign up</b></p>
+            <input type="text" name="username" id="username" placeholder="Введіть логін" maxlength="32" minlength="5" required="" value="" /><span id="span_name"> </span>
+            <input type="email" name="email" id="email" placeholder="Введіть e-mail" maxlength="32" required=""value=""/><span  id="span_email"> </span>
+            <input type="password" name="password" id="password" placeholder="Введіть пароль" maxlength="32" minlength="8" required="" value="" /><span id="span_password"> </span>
+            <input type="password" name="repeat_password" id="repeat_password" placeholder="Повторіть пароль" maxlength="32" minlength="8" required="" value="" /><span id="span_repeat_password"> </span>
+            
+            <div class="checkbox_add"><input type="checkbox" id="checkbox" onclick="checking()"><label>Додаткові можливості </label></div>
+            <script src="js/checked_sign_up.js"></script>
+
+            <div class="upload_user">
+                <div class="upload" id="upload">
+                <div class="user_image" id="user_image">
+                    <label for="user_image">Завантажте Ваш аватар</label>
+                    <input type="file" id="user_image" name="user_image" accept=".jpg, .jpeg, .png" multiple>
+                </div>
+                <div class="user_work" id="user_work">
+                    <label for="user_work">Завантажте Вашу роботу</label>
+                    <input type="file" id="user_work" name="user_work" multiple>
+                </div>
+                </div>
+            </div>
+            <input type="button" value="Готово" name="submit_sign_up" id="submit_sign_up">
+        </div>
+        <div class="change_style" id="change_style">
+                <input type="image" name="light_style"  id="chande_light_style" onclick="all_style()" src="images/moon.png">
+                <input type="image" name="dark_style"  id="chande_dark_style" onclick="all_style()" src="images/sun.png">
+        </div>
+        <div class="contact_us" id="contact_us">
+            <a href="contact_us.html"><input type="image" name="light_style"  id="contact_light_style" src="images/communicate.png"></a>
+            <a href="contact_us.html"><input type="image" name="dark_style"  id="contact_dark_style" src="images/communicate_light.png"></a>
+        </div>
+     </div>
+</div>
+</body>
+</html>

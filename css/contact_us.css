@@ -1,0 +1,112 @@
+.contact_us_form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3% 20%;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 30px;
+}
+.contact_input{
+    display: grid;
+    width: 100%;
+    height: 85vh;
+    grid-template-rows: .6fr .6fr 0.6fr 0.5fr 0.6fr 0.5fr 3fr;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 2% 10% 4.5% 10%;
+    background-color: rgb(235, 235, 235);
+    border-radius: 30px;
+}
+.contact_input span[id="text"]{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: 16px;
+    padding: 0.5% 2%;
+}
+.contact_input input[type="text"]{
+    grid-row: 3/4;
+}
+.contact_input span[id="span_name"]{
+    grid-row: 4/5;
+}
+.contact_input input[type="email"]{
+    grid-row: 5/6;
+}
+.contact_input span[id="span_email"]{
+    grid-row: 6/7;
+}
+.contact_input input[type="button"]{
+    grid-row: 3/6;
+    grid-column: 2/3;
+    margin: 2% 15%;
+    min-height: 3pc;
+    max-height: 6pc;
+    border: none;
+    border-radius: 20px;
+    background-color: #f26c4f;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 30px;
+}
+.contact_input input[type="button"]:hover{
+    background-color: #fc461d;
+}
+.contact_input input[type="text"],.contact_input input[type="email"]{
+    width: 100%-30px;
+    height: 2pc-4px;
+    max-height: 4pc;
+    border: 2px solid rgb(220, 220, 220);
+    border-radius: 10px;
+    padding: 2px 15px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+}
+.contact_input textarea{
+    max-width: 800px;
+    max-height: 175px;
+    grid-row: 7/8;
+    grid-column: 1/3;
+    width: 100%-30px;
+    height: 100%-4px;
+    border: 2px solid rgb(220, 220, 220);
+    border-radius: 10px;
+    padding: 2px 15px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+    resize: none;
+}
+
+.contact_input input:hover, .contact_input textarea:hover{
+    border-color: #f26c4f;
+}
+.contact_input input[type="text"]:focus, .contact_input input[type="email"]:focus, .contact_input textarea:focus{
+    outline: none !important;
+    border: 2px solid blue;
+}
+.contact_input input[type="text"]:not(:placeholder-shown):invalid,.contact_input input[type="email"]:not(:placeholder-shown):invalid{
+    border-color: red;
+}
+.contact_input input:not(:placeholder-shown):invalid + span::before{
+  content: "Please enter correct data";
+  font-size: 10px;
+  color: red;
+}
+
+@media(max-width:960px){
+   .contact_us_form{
+        padding: 3% 15%;
+    }
+    .contact_input{
+        padding: 2% 5% 4.5% 5%;
+    }
+    .contact_input input[type="button"]{
+
+        margin:  15%;
+        font-size: 20px;
+    }
+}
+@media(max-width:700px){
+    .contact_us_form{
+        padding: 3% 5%;
+    }
+}
+

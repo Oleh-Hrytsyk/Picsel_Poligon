@@ -1,0 +1,134 @@
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(020, 020, 020);
+}
+.logo{
+    margin: 0.5pc 4%;
+}
+.logo_button:hover{
+    border-radius: 25px;
+    background-color: rgb(050, 050, 050);
+    transition: 0.8s;
+}
+.logo img{
+    padding: 8px 15px 1px;
+    max-width: 5pc;
+}
+.header_buttons{
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+    color:whitesmoke;
+    text-decoration: none;
+    
+}
+.header_buttons a{
+    color:whitesmoke;
+    text-decoration: none;
+}
+.home_button{
+    padding: 1pc;
+    margin: 0 2% 0 3px;
+    transition: 0.8s;
+    border-radius: 40px;
+    background-color: rgb(085, 085, 085);
+}
+.home{
+    padding: 1pc;
+    margin: 0 2% 0 3px;
+    transition: 0.8s;
+    border-radius: 40px;
+}
+.sign_up, .sign_in{
+    
+    padding: 1pc;
+    margin: 0 3px;
+    transition: 0.8s;
+}
+.username_button{
+    display: none;
+    padding: 1pc;
+    margin: 0 2% 0 3px;
+    transition: 0.8s;
+    border-radius: 40px;
+    background-color: rgb(040, 040, 040);
+}
+.username{
+    display: none;
+    padding: 1pc;
+    margin: 0 3px;
+    transition: 0.8s;
+}
+.log_out{
+    display: none;
+    padding: 1pc;
+    margin: 0 3px;
+    transition: 0.8s;
+}
+
+.home_button:hover, .home:hover, .sign_up:hover, .sign_in:hover, .search_line input[type="image"]:hover, .username:hover, .log_out:hover{
+    border-radius: 40px;
+    background-color: rgb(050, 050, 050);
+}
+.search_line input[type="image"]{
+    padding: 8px;
+    margin: 0 3px;
+    border: none;
+    background: none;
+    transition: 0.8s;
+    height: fit-content;
+    max-height: 1.5pc;
+    max-width: 1.5pc;
+}
+.search_line input[id="dark_loupe"]{
+    display: block;
+}
+.search_line input[id="light_loupe" ]{
+    display: none;
+}
+.search_line input[type="image"] img{
+    max-height: 1.5pc;
+    height: auto;
+}
+.search_line{
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+    align-items: center;
+    flex-grow: 8;
+}
+.search_line input[type="search"]{
+    width: 100%;
+    height: 2.5pc;
+    border: 2px solid rgb(220, 220, 220);
+    border-radius: 30px;
+    padding: 3px 6px 3px 12px;
+    font-size: 16px;
+}
+.search_line input[type="search"]:focus{
+    outline:none;
+    border: 3px solid rgb(170, 170, 170);
+}
+
+@media(max-width:960px){
+    .logo{
+        margin: 0.5pc 2%;
+    }
+    .logo img{
+        padding: auto 10px;
+        max-width: 3pc;
+    }
+    .header_buttons{
+        font-size: 90%;
+    }
+}

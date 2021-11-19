@@ -1,0 +1,51 @@
+.change_style{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    left: auto;
+    right: 2%;
+    top: 55vh;
+    bottom: auto;
+    border-radius: 40px;
+    transition: 0.8s;
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+}
+.contact_us{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    left: auto;
+    right: 2%;
+    top: 65vh;
+    bottom: auto;
+    border-radius: 40px;
+    transition: 0.8s;
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+}
+.change_style:hover, .contact_us:hover{
+    background-color: rgb(210, 210, 210);
+}
+.change_style input, .contact_us input{
+    min-width: 25px;
+    width: 100%;
+    max-width: 40px;
+}
+.change_style input[name="dark_style"], .contact_us input[name="dark_style"]{
+    display: none;
+}
+
+@media(max-width:960px){
+    .change_style, .contact_us{
+        width: auto;
+        height: 25px;
+        position: fixed;
+        left: auto;
+        right: 1%;
+    }
+    .change_style input, .contact_us input{
+        max-width: 25px;
+    }
+}
+
