@@ -6,6 +6,7 @@
     <title>Sign up</title>
     <link id="css_style" rel="stylesheet" href="css/style.css">
     <script src="js/chenge_style.js"></script>
+    <script src="js/work_db.js"></script>
         <link rel="shortcut icon" href="icons/logo.ico" type="x-icon">
     </head>
 <body>
@@ -31,7 +32,7 @@
             <div class="sign_up" id="sign_up">
                 <p><a href="registration.html"><b>Реєстрація</b></a></p>
             </div>
-            <div class="username" id="username">
+            <div class="username" id="user_name">
                 <p><a href="user_page.html"><b>Username</b></a></p>
             </div>
             <div class="log_out" id="log_out">
@@ -43,10 +44,10 @@
         <div class="registration" id="registration">
         <div class="registration_form" id="registration_form">
             <p><b>Sign up</b></p>
-            <input type="text" name="username" id="username" placeholder="Введіть логін" maxlength="32" minlength="5" required="" value="" /><span id="span_name"> </span>
+            <input type="text" name="username" id="username" placeholder="Введіть логін" maxlength="14" minlength="3" required="" value="" /><span id="span_name"> </span>
             <input type="email" name="email" id="email" placeholder="Введіть e-mail" maxlength="32" required="" value=""/><span  id="span_email"> </span>
-            <input type="password" name="password" id="password" placeholder="Введіть пароль" maxlength="32" minlength="8" required="" value="" /><span id="span_password"> </span>
-            <input type="password" name="repeat_password" id="repeat_password" placeholder="Повторіть пароль" maxlength="32" minlength="8" required="" value="" /><span id="span_repeat_password"> </span>
+            <input type="password" name="password" id="password" placeholder="Введіть пароль" maxlength="12" minlength="8" required="" value="" /><span id="span_password"> </span>
+            <input type="password" name="repeat_password" id="repeat_password" placeholder="Повторіть пароль" maxlength="12" minlength="8" required="" value="" /><span id="span_repeat_password"> </span>
             
             <div class="checkbox_add"><input type="checkbox" id="checkbox" onclick="checking()"><label>Додаткові можливості </label></div>
             <script src="js/checked_sign_up.js"></script>
@@ -63,7 +64,7 @@
                 </div>
                 </div>
             </div>
-            <input type="button" value="Готово" name="submit_sign_up" id="submit_sign_up">
+            <input type="button" value="Готово" name="submit_sign_up" id="submit_sign_up" onclick="validate()">
         </div>
         <div class="change_style" id="change_style">
                 <input type="image" name="light_style"  id="chande_light_style" onclick="all_style()" src="images/moon.png">
