@@ -107,11 +107,26 @@
 .registration_form input[type="text"]:not(:placeholder-shown):invalid,.registration_form input[type="email"]:not(:placeholder-shown):invalid,.registration_form input[type="password"]:not(:placeholder-shown):invalid{
     border-color: red;
  }
-.registration_form input:not(:placeholder-shown):invalid + span::before{
-  content: "Please enter correct data";
-  font-size: 16px;
-  color: red;
-}
+ .registration_form input[type="text"]:not(:placeholder-shown):invalid + span::before{
+    content: "Length should be 3 - 14";
+    font-size: 16px;
+    line-height: 20px;
+    color: red;
+  }
+  
+  .registration_form input[type="email"]:not(:placeholder-shown):invalid + span::before{
+      content: "Must be like 'example@gmail.com'";
+      font-size: 16px;
+      line-height: 20px;
+      color: red;
+    }
+  
+    .registration_form input[type="password"]:not(:placeholder-shown):invalid + span::before{
+      content: "Length should be 8 - 12";
+      font-size: 16px;
+      line-height: 20px;
+      color: red;
+    }
 .checkbox_add{
     text-align: left;
 }
