@@ -115,7 +115,7 @@
   }
   
   .registration_form input[type="email"]:not(:placeholder-shown):invalid + span::before{
-      content: "Must be like 'example@gmail.com'";
+      content: "Must contain '@' symbol";
       font-size: 16px;
       line-height: 20px;
       color: red;
